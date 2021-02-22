@@ -1,14 +1,11 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: CJE
-  Date: 2021-02-22
-  Time: 오후 2:15
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<jsp:useBean id="helloWorld" class="example.HelloWorld"/>
 <html>
   <head>
     <title>$Title$</title>
+    <% String name = helloWorld.sayHelloWorldFrom("조주은"); %>
+    <div>안녕하세요 반갑습니다</div>
+    <div> <%= name %> </div>
   </head>
   <body>
   $END$
